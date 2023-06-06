@@ -105,7 +105,7 @@ const SearchContainer = ({ allCourses, allTopics }) => {
             No filter
           </label>
           {["25", "50", "75"].map((value) => (
-            <label className="input--radio mb-xs">
+            <label className="input--radio mb-xs" key={value}>
               <input
                 type="radio"
                 name="popularity"
@@ -130,7 +130,7 @@ const SearchContainer = ({ allCourses, allTopics }) => {
             No filter
           </label>
           {["25", "50", "75"].map((value) => (
-            <label className="input--radio mb-xs">
+            <label key={value} className="input--radio mb-xs">
               <input
                 type="radio"
                 name="stickiness"
