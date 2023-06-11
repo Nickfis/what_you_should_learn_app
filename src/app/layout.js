@@ -1,6 +1,9 @@
 import Header from "./components/Header";
 import Head from "next/head";
+import Link from "next/link";
 import "./../styling/styles.scss";
+import { useRouter } from "next/navigation";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "MIT Courses Ranked",
@@ -11,7 +14,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, props }) {
   return (
     <html lang="en">
       <Head>
@@ -29,6 +32,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

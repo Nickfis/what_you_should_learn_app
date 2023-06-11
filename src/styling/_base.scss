@@ -63,6 +63,11 @@ button {
   margin-bottom: 32px;
 }
 
+.about-link {
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+
 @include respond(big-desktop) {
   body {
     padding: 3vh 24vw;
